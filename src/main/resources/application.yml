@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: ddd-demo-service
+
+  datasource:
+    url: jdbc:h2:mem:demo;MODE=MySQL;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false;INIT=CREATE SCHEMA IF NOT EXISTS "demo";
+    driverClassName: org.h2.Driver
+
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
